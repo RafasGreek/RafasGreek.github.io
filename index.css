@@ -10,7 +10,7 @@ body {
     color: #e2e8f0;
 }
 
-/* HERO */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -21,7 +21,14 @@ body {
     text-align: center;
 }
 
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
 
+}
 
 .hero h1 {
     font-size: 4rem;
@@ -35,21 +42,21 @@ body {
 }
 
 .btn {
+    display: inline;
     margin-top: 20px;
     padding: 10px 20px;
     border: solid 3px rgb(255, 255, 255, 0.4);
     background: linear-gradient(0deg, #6366f1, #2c2d6a);
     color: white;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 12px;
     transition: 0.2s;
 }
 
 .btn:hover {
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-/* SECTIONS */
 .section {
     padding: 80px 20px;
     max-width: 100%;
@@ -74,7 +81,7 @@ body {
 
 }
 
-/* PROJECTS BACKGROUND ANIMATION */
+
 #projects {
     position: relative;
     overflow: hidden;
@@ -115,8 +122,6 @@ body {
     }
 }
 
-/* HORIZONTAL SCROLL */
-/* vertical scroll container */
 .projects-scroll {
     max-height: 900px;
     overflow-y: visible;
@@ -127,7 +132,6 @@ body {
     padding: 20px 30px 50px 30px;
 }
 
-/* grid layout */
 .projects-grid {
     display: grid;
 
@@ -135,8 +139,6 @@ body {
     gap: 25px;
 }
 
-
-/* CARDS */
 .card {
     position: relative;
     border-radius: 16px;
@@ -189,7 +191,6 @@ body {
     padding: 20px;
 }
 
-/* TAG CONTAINER */
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -197,7 +198,6 @@ body {
     margin-top: 12px;
 }
 
-/* INDIVIDUAL TAG */
 .tags span {
     font-size: 0.75rem;
     padding: 4px 10px;
@@ -212,7 +212,7 @@ body {
     transition: 0.2s;
 }
 
-/* subtle hover effect */
+
 .tags span:hover {
     background: rgba(56, 189, 248, 0.2);
     border-color: #38bdf8;
@@ -224,7 +224,7 @@ body {
     opacity: 0.8;
 }
 
-/* LINKS */
+
 .links a {
     margin-right: 10px;
     color: #38bdf8;
@@ -247,7 +247,6 @@ body {
     width: 100%;
 }
 
-/* SOCIAL LINKS CONTAINER */
 .social-links {
     margin-top: 50px;
     display: flex;
@@ -255,7 +254,7 @@ body {
     gap: 20px;
 }
 
-/* INDIVIDUAL LINKS */
+
 .social-links a {
     text-decoration: none;
     transition: 0.3s;
@@ -266,14 +265,13 @@ body {
     max-height: 25px;
 }
 
-/* HOVER EFFECT */
+
 .social-links a:hover {
     transform: translateY(-5px);
 
 }
 
-/* SKILLS */
-/* Skills Panels Container */
+
 .skills-panels {
     display: flex;
     flex-wrap: wrap;
@@ -282,7 +280,6 @@ body {
     margin-top: 30px;
 }
 
-/* Individual Glass Panel */
 .skill-panel {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
@@ -290,19 +287,19 @@ body {
     border-radius: 16px;
     padding: 25px 20px;
     width: 280px;
-    /* fixed width, can adjust */
+
     text-align: left;
     transition: transform .3s, box-shadow .3s;
 }
 
-/* Hover effect */
+
 .skill-panel:hover {
     transform: translateY(-8px);
     transition: 0.3s;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* Panel Titles */
+
 .skill-panel h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -311,7 +308,7 @@ body {
     text-shadow: 2px 2px 5px rgb(0, 0, 0, .4);
 }
 
-/* List Items */
+
 .skill-panel ul {
     list-style: none;
     padding: 0;
@@ -325,12 +322,12 @@ body {
     color: #e2e8f0;
 }
 
-/* CONTACT */
+
 .contact {
     text-align: center;
 }
 
-/* ANIMATIONS */
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -352,7 +349,6 @@ body {
     }
 }
 
-/* PROFILE SECTION */
 .profile-container {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -360,14 +356,13 @@ body {
     align-items: start;
 }
 
-/* summary text */
+
 .profile-summary {
     font-size: 1.05rem;
     line-height: 1.6;
     opacity: 0.9;
 }
 
-/* right side blocks */
 .profile-block {
     margin-bottom: 25px;
 }
@@ -376,7 +371,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* tags (languages/tools) */
+
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -391,7 +386,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* responsive */
+
 @media (max-width: 800px) {
     .profile-container {
         grid-template-columns: 1fr;
@@ -399,33 +394,29 @@ body {
 }
 
 
-
-/* ABOUT ME BACKGROUND */
 .about-container {
     max-width: 700px;
     margin: 0 auto;
     padding: 30px 25px;
     text-align: center;
 
-    /* Glass effect */
+
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.1);
 
-    /* Optional subtle gradient overlay */
+
     background-image: linear-gradient(135deg, rgba(56, 189, 248, 0.05), rgba(99, 102, 241, 0.05));
     transition: 0.3s;
 }
 
-/* Optional: slightly lift on hover */
 .about-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
     transition: 0.3s;
 }
 
-/* make sure ALL text inside is centered */
 .about-container p,
 .about-container h3,
 .about-container div {
@@ -436,14 +427,14 @@ body {
     margin-top: 25px;
 }
 
-/* HERO NAME FIXED */
+
 .hero h1 {
 
     color: #ffffff;
-    /* base color */
+
     text-align: center;
     font-weight: 700;
-    /* glow layers */
+
     text-shadow:
         0 0 5px #7dd3fc,
         0 0 5px #7dd3fc,
@@ -452,7 +443,7 @@ body {
         0 0 5px #7dd3fc,
         0 0 50px #7dd3fc;
 
-    /* animation */
+
 
 }
 
@@ -466,16 +457,16 @@ body {
         0 0 10px #7dd3fc;
 }
 
-/* NAVBAR STYLING */
+
 .navbar {
     position: fixed;
-    /* stays at top */
+
     top: 0;
     width: 100%;
     background: linear-gradient(0deg, #273b69, #111c38);
-    /* semi-transparent dark */
+
     backdrop-filter: blur(10px);
-    /* glass effect */
+
     z-index: 1000;
     padding: 10px 0;
     box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
@@ -517,12 +508,11 @@ body {
     transition: .3s;
 }
 
-/* Smooth scrolling for links */
 html {
     scroll-behavior: smooth;
 }
 
-/* Push content below navbar */
+
 body {
     padding-top: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
